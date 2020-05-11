@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css">
 </head>
 <body>
-<form action="processFormTwo" method="get">
+<form action="processFormThree" method="get">
     <input type="text" name="name" placeholder="What's your name?" />
-    <button type="submit" onclick="showAlert()">Submit</button>
+    <button type="submit">Submit</button>
 </form>
 
 Student name: ${param.name}<br>
