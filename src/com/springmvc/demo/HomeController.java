@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/hello")
+@RequestMapping("hello")
 public class HomeController {
 
     @RequestMapping("/showform")
@@ -19,7 +19,9 @@ public class HomeController {
     }
 
     @RequestMapping("/processFormTwo")
-    public String processFormTwo(@RequestParam("name") String theName, Model model) {
+    public String processFormTwo(@RequestParam("na" +
+            "" +
+            "me") String theName, Model model) {
 
         theName = theName.toUpperCase();
         String result = "Hi, " + theName;
